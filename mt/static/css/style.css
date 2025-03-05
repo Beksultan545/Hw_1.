@@ -1,0 +1,125 @@
+/* 🌟 Жалпы стильдер */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🏆 Навигация */
+.navbar {
+    background: rgba(0, 123, 255, 0.9) !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    color: white !important;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #d4d4d4 !important;
+    transform: scale(1.05);
+}
+
+/* 📌 Контейнерлер */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* ✨ Карточкалар */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* 🎨 Батырмалар */
+.btn-primary {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #0056b3, #004085);
+    transform: scale(1.05);
+}
+
+/* 📋 Кестелер */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+table th, table td {
+    border: none;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    font-weight: bold;
+}
+
+/* 📑 Формалар */
+.form-control {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* 🔥 Хабарламалар */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.alert-success {
+    background: linear-gradient(90deg, #28a745, #218838);
+    color: white;
+}
+
+.alert-danger {
+    background: linear-gradient(90deg, #dc3545, #c82333);
+    color: white;
+}
+
+/* 🔄 Анимациялар */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
