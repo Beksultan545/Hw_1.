@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Add Todo</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input type="text" class="form-control" name="title" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Description</label>
+            <textarea class="form-control" name="description" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Due Date</label>
+            <input type="date" class="form-control" name="due_date" required>
+        </div>
+
+        <!-- ✅ Статус қосу үшін чекбокс -->
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" name="status" id="status">
+            <label class="form-check-label" for="status">Completed</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add</button>
+        <a href="{% url 'todo_list' %}" class="btn btn-secondary">Back</a> <!-- 🔙 Артқа қайту батырмасы -->
+    </form>
+</div>
+{% endblock %}
